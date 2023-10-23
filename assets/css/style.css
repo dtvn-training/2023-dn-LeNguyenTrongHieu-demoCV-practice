@@ -44,9 +44,13 @@
     display: inline-flex;
 }
 
+.contact .content .icon {
+    width: 2.5rem;
+}
+
 #left-resume .contact .content i {
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     margin-right: 1rem;
 }
 
@@ -118,20 +122,51 @@
 }
 
 .container #right-resume h2 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 400;
 }
 
+#right-resume .content {
+    margin-top: 3rem;
+}
+
 #right-resume .content .title {
-    width: 100%;
-    display: inline-flex;
-    padding-bottom: .3rem;
+    display: block;
     border-bottom: .1rem solid #000;
+    padding-bottom: .3rem;
 }
 
 #right-resume .title i {
+    width: 2.4rem;
     color: #fff;
     padding: .5rem;
-    background-color: #000;
     border-radius: 50%;
+    background-color: #000;
+    margin-right: 1rem;
+}
+
+#right-resume .title h3 {
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 1.4rem;
+}
+
+#right-resume .content .body-content {
+
+}
+
+.content .body-content td:first-child {
+    width: 30%;
+    text-transform: capitalize;
+    font-size: 1rem;
+}
+
+.content .body-content td {
+    font-size: .8rem;
+}
+
+.content .body-content td h5 {
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size:1.2rem;
 }
