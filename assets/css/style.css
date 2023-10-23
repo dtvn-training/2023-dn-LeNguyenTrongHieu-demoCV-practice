@@ -11,10 +11,10 @@
     display: flex;
     width: 50rem;
     border: .1rem solid #000;
+    cursor: default;
 }
 
 .container #left-resume {
-    display: block;
     background-color: #333;
     width: calc(30%);
 }
@@ -110,7 +110,8 @@
     display: block;
     background-color: #fff;
     width: calc(70%);
-    padding: 2.5rem;
+    padding: 1.5rem 2.5rem 0 2.5rem;
+    margin: 0;
 }
 
 .container #right-resume h1, h2 {
@@ -127,7 +128,7 @@
 }
 
 #right-resume .content {
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
 #right-resume .content .title {
@@ -153,16 +154,33 @@
 
 .content .body-content td:first-child {
     width: 30%;
+    color: #000;
     text-transform: capitalize;
     font-size: .9rem;
 }
 
 .content .body-content td {
+    color: #616161;
     font-size: .8rem;
 }
 
 .content .body-content td h5 {
-    font-weight: normal;
+    font-weight: lighter;
     text-transform: uppercase;
     font-size:1.2rem;
+}
+
+.content .infos {
+    position: absolute;
+    margin-top: .5rem;
+    display: flex;
+}
+
+.content .infos .info {
+    margin-right: 5rem;
+    font-size: .8rem;
+}
+
+.content .infos .info h5 {
+    font-size: 1.2rem; 
 }
