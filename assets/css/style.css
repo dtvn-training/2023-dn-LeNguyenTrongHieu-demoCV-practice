@@ -2,9 +2,14 @@
 
 *{
     font-family: 'Poppins', sans-serif;
-    margin: auto;
-    padding: auto;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
 }
 
 .container{
@@ -12,6 +17,7 @@
     width: 50rem;
     border: .1rem solid #000;
     cursor: default;
+    margin: 2rem;
 }
 
 .container #left-resume {
@@ -83,7 +89,21 @@
 
 .skill .mature .complete {
     border: .15rem solid #fff;
-    margin-left: 55%;
+}
+
+.margin-left40 {
+    margin-left: 40%;
+}
+
+.margin-left50 {
+    margin-left: 50%;
+}
+.margin-left60 {
+    margin-left: 60%;
+}
+
+.margin-left65 {
+    margin-left: 65%;
 }
 
 #left-resume .follow-me {
@@ -125,10 +145,11 @@
 .container #right-resume h2 {
     font-size: 1.6rem;
     font-weight: 400;
+    margin-bottom: 2rem;
 }
 
 #right-resume .content {
-    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 #right-resume .content .title {
@@ -171,8 +192,8 @@
 }
 
 .content .infos {
-    position: absolute;
-    margin-top: .5rem;
+    position: relative;
+    margin: .5rem;
     display: flex;
 }
 
