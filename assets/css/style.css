@@ -91,19 +91,19 @@ body {
     border: .15rem solid #fff;
 }
 
-.margin-left40 {
-    margin-left: 40%;
-}
-
-.margin-left50 {
+.ml50 {
     margin-left: 50%;
 }
-.margin-left60 {
+
+.ml55 {
+    margin-left: 55%;
+}
+.ml60 {
     margin-left: 60%;
 }
 
-.margin-left65 {
-    margin-left: 65%;
+.ml75 {
+    margin-left: 75%;
 }
 
 #left-resume .follow-me {
