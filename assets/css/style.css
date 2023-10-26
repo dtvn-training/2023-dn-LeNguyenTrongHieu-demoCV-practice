@@ -13,24 +13,25 @@ body {
 }
 
 .container{
-    display: flex;
+    display: grid;
+    grid-template-columns: .8fr 2fr;
     width: 50rem;
     border: .1rem solid #000;
     cursor: default;
-    margin: 2rem;
+    margin: 4rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0 1rem 3rem;
 }
 
 .container #left-resume {
+    position: relative;
     background-color: #333;
-    width: calc(30%);
 }
 
 .container #left-resume img {
     display: block;
-    align-items: center;
-    width: 14rem;
+    width: 12rem;
     border-radius: 50%;
-    padding: 1.5rem;
+    margin: 2rem auto;
 }
 
 .container #left-resume .title {
@@ -83,27 +84,26 @@ body {
 }
 
 .skill .mature {
-    border: .2rem solid #ccc;
-    border-radius: .2rem;
+    border: .2rem solid #fff;
 }
 
 .skill .mature .complete {
     border: .15rem solid #fff;
 }
 
-.margin-left40 {
-    margin-left: 40%;
+.mr50 {
+    margin-right: 50%;
 }
 
-.margin-left50 {
-    margin-left: 50%;
+.mr45 {
+    margin-right: 45%;
 }
-.margin-left60 {
-    margin-left: 60%;
+.mr60 {
+    margin-right: 40%;
 }
 
-.margin-left65 {
-    margin-left: 65%;
+.mr25 {
+    margin-right: 25%;
 }
 
 #left-resume .follow-me {
@@ -127,9 +127,8 @@ body {
 }
 
 .container #right-resume {
-    display: block;
+    position: relative;
     background-color: #fff;
-    width: calc(70%);
     padding: 1.5rem 2.5rem 0 2.5rem;
     margin: 0;
 }
@@ -198,10 +197,33 @@ body {
 }
 
 .content .infos .info {
-    margin-right: 5rem;
+    margin-right: 3rem;
     font-size: .8rem;
 }
 
 .content .infos .info h5 {
     font-size: 1.2rem; 
+}
+
+@media only screen and (max-width: 46.1875em) {
+    .container {
+        position: relative;
+        display: block;
+    }
+
+    #left-resume {
+        position: absolute;
+        padding-top: 1rem;
+    }
+
+    #left-resume img {
+        display: block;
+        border-radius: 50%;
+        margin: 2rem;
+    }
+
+    #left-resume .title {
+        width: 60%;
+        margin: 0 auto;
+    }
 }
