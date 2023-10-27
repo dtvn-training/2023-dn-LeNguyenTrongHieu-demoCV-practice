@@ -14,7 +14,7 @@ body {
 
 .container{
     display: grid;
-    grid-template-columns: .8fr 2fr;
+    grid-template-columns: 1fr 2fr;
     width: 50rem;
     border: .1rem solid #000;
     cursor: default;
@@ -35,7 +35,9 @@ body {
 }
 
 .container #left-resume .title {
-    margin: 1.5rem 0 0 2.5rem;
+    position: relative;
+    margin-left: 3rem;
+    margin-bottom: 3rem;
 }
 
 .container #left-resume .title h3{
@@ -47,7 +49,7 @@ body {
 }
 
 .container #left-resume .contact .content {
-    margin: 1.5rem 1rem 0 0;
+    margin: 1.5rem 2rem 0 0;
     display: inline-flex;
 }
 
@@ -74,7 +76,7 @@ body {
 }
 
 #left-resume .skills .skill {
-    margin: 1rem 1rem 0 0;
+    margin: 1rem 2rem 0 0;
     display: block;
 }
 
@@ -193,7 +195,8 @@ body {
 .content .infos {
     position: relative;
     margin: .5rem;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .content .infos .info {
@@ -205,25 +208,49 @@ body {
     font-size: 1.2rem; 
 }
 
-@media only screen and (max-width: 46.1875em) {
+@media only screen and (max-width: 46.25rem) {
     .container {
         position: relative;
         display: block;
+        min-width: 500px;
     }
 
-    #left-resume {
-        position: absolute;
+    .container #left-resume {
+        display: block;
         padding-top: 1rem;
     }
 
-    #left-resume img {
-        display: block;
-        border-radius: 50%;
-        margin: 2rem;
+    .container #left-resume img  {
+        width: 20rem;
+        margin: auto;
     }
 
     #left-resume .title {
-        width: 60%;
-        margin: 0 auto;
+        margin: 3rem;
     }
+
+    .container #left-resume .title h3 {
+        font-size: 1.8rem;
+    }
+
+    .container #left-resume .contact .content {
+        margin: 1rem;
+    }
+
+    .title .content {
+        width: 100%;
+    }
+
+    .title .skill {
+        width: 70%;
+    }
+
+    #left-resume .skills .skill {
+        margin: 1rem;
+    }
+
+    #left-resume .follow-me .content {
+        margin: 1rem;
+    }
+
 }
